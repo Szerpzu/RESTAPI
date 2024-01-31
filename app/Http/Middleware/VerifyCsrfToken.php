@@ -12,10 +12,8 @@ class VerifyCsrfToken extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        'get/*', // Wyłącz weryfikację CSRF dla wszystkich ścieżek rozpoczynających się od "example/"
-        "put/*",
-        "delete/*",
-        "post/*",
+        '/api/*'
+    
 
     ];
 }
